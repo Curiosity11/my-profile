@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohan Bera - Computer Programmer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero.is-primary {
+            background: linear-gradient(135deg, #4a148c, #7b1fa2);
+        }
+        .box {
+            box-shadow: 0 2px 15px rgba(10, 10, 10, 0.1);
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        .box:hover {
+            transform: translateY(-5px);
+        }
+        .skill-tag {
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .timeline {
+            margin-left: 1rem;
+            padding-left: 1.5rem;
+            border-left: 2px solid #7b1fa2;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -1.65rem;
+            top: 0.25rem;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: #7b1fa2;
+        }
+        .has-text-primary {
+            color: #7b1fa2 !important;
+        }
+        .section {
+            padding: 2rem 1.5rem;
+        }
+        .project-title, .achievement-item {
+            display: flex;
+            align-items: center;
+        }
+        .external-link {
+            margin-left: 8px;
+            color: #7b1fa2;
+            transition: transform 0.2s ease;
+        }
+        .external-link:hover {
+            transform: scale(1.2);
+        }
+        .achievement-card {
+            padding: 0.75rem;
+            margin-bottom: 0.75rem;
+            border-radius: 6px;
+            background-color: #f9f5ff;
+            border-left: 4px solid #7b1fa2;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+        .achievement-card:hover {
+            background-color: #f3e5f5;
+            transform: translateX(5px);
+            box-shadow: 0 2px 10px rgba(123, 31, 162, 0.1);
+        }
+        .achievement-icon {
+            margin-right: 12px;
+            color: #7b1fa2;
+            font-size: 1.25rem;
+        }
+        .achievement-content {
+            flex: 1;
+        }
+        .achievement-platform {
+            display: inline-block;
+            font-size: 0.8rem;
+            padding: 2px 8px;
+            border-radius: 12px;
+            background-color: #e1bee7;
+            color: #4a148c;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero is-primary is-medium">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column">
+                        <h1 class="title is-1 has-text-weight-bold">
+                            Mohan Bera
+                        </h1>
+                        <h2 class="subtitle is-3">
+                            Computer Programmer
+                        </h2>
+                        <p class="is-size-5 mb-4">
+                            "I find motivation in solving complex problems with simple and effective solutions."
+                        </p>
+                        <div class="buttons">
+                            <a href="mailto:immohanbera10@gmail.com" class="button is-light is-outlined">
+                                <span class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                                <span>Contact Me</span>
+                            </a>
+                            <a href="https://github.com/mohanbera" target="_blank" class="button is-light is-outlined">
+                                <span class="icon">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <!-- Left Side (Main Content) -->
+                <div class="column is-8">
+                    <!-- Work Experience -->
+                    <div class="box">
+                        <h3 class="title is-4 has-text-primary">
+                            <span class="icon mr-2">
+                                <i class="fas fa-briefcase"></i>
+                            </span>
+                            Work Experience
+                        </h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="is-size-5 has-text-weight-bold">Software Developer Engineer (Fullstack)</div>
+                                <div class="is-size-5 has-text-primary mb-2">Siemens | 08/2021 - Present</div>
+                                <div class="content">
+                                    <ul>
+                                        <li>Simplified a complex schema to facilitate UI rendering.</li>
+                                        <li>Managed large dataset rendering in a table within the UI.</li>
+                                        <li>Implemented data fetching based on the visible viewport area during scrolling.</li>
+                                        <li>Developed and rendered a tree-like hierarchy of row tags, enabling operations like expand, collapse, add, delete, edit.</li>
+                                        <li>Handling backup and restoration of large datasets under tight memory constraints.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projects -->
+                    <div class="box">
+                        <h3 class="title is-4 has-text-primary">
+                            <span class="icon mr-2">
+                                <i class="fas fa-project-diagram"></i>
+                            </span>
+                            Personal Projects
+                        </h3>
+
+                        <article class="media">
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <div class="project-title">
+                                            <strong>Web IDE</strong>
+                                            <a href="#" class="external-link" target="_blank">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                        </div>
+                                        <br>
+                                        A web IDE to compile Java, C, C++ & Python code. Live code sharing & video conference in a group.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="media">
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <div class="project-title">
+                                            <strong>Code Diary</strong>
+                                            <a href="#" class="external-link" target="_blank">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                        </div>
+                                        <br>
+                                        A web app to store everyday codes, notes, Youtube content, links etc & search from stored information.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="media">
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <div class="project-title">
+                                            <strong>Ask ME</strong>
+                                            <a href="#" class="external-link" target="_blank">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                        </div>
+                                        <br>
+                                        A complete website for asking questions and providing answers. Sending notifications and messages. Complete profiles of students.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="media">
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <div class="project-title">
+                                            <strong>ShareX</strong>
+                                            <a href="#" class="external-link" target="_blank">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                        </div>
+                                        <br>
+                                        An android and desktop application to share files. Java swing for Desktop and Java android for android devices.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="media">
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <div class="project-title">
+                                            <strong>Home Automation</strong>
+                                            <a href="#" class="external-link" target="_blank">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                        </div>
+                                        <br>
+                                        A simple home automation system to control all household electronics devices. Implemented using Raspberry-Pi, Python Programming, Java Backend, MySQl.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="media">
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                        <div class="project-title">
+                                            <strong>LCD Tic-tac-Toe</strong>
+                                            <a href="#" class="external-link" target="_blank">
+                                                <i class="fas fa-external-link-alt"></i>
+                                            </a>
+                                        </div>
+                                        <br>
+                                        A tic-tac-toe game on LCD display using AVR microcontroller & C programming.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="box">
+                        <h3 class="title is-4 has-text-primary">
+                            <span class="icon mr-2">
+                                <i class="fas fa-graduation-cap"></i>
+                            </span>
+                            Education
+                        </h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="is-size-5 has-text-weight-bold">B.Tech Computer Science & Engineering</div>
+                                <div class="is-size-6 has-text-grey mb-2">Lovely Professional University | 07/2016 - 07/2020</div>
+                                <div class="is-size-6">CGPA: 7.2</div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="is-size-5 has-text-weight-bold">Higher Secondary Education</div>
+                                <div class="is-size-6 has-text-grey mb-2">Khukurdaha I.C.M.M High School | 2014 - 2016</div>
+                                <div class="is-size-6">Percentage: 77%</div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="is-size-5 has-text-weight-bold">Secondary Education</div>
+                                <div class="is-size-6 has-text-grey mb-2">Khukurdaha I.C.M.M High School | 2009 - 2014</div>
+                                <div class="is-size-6">Percentage: 83.5%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side (Side Info) -->
+                <div class="column is-4">
+                    <!-- Contact Info -->
+                    <div class="box">
+                        <h3 class="title is-4 has-text-primary">
+                            <span class="icon mr-2">
+                                <i class="fas fa-id-card"></i>
+                            </span>
+                            Contact Information
+                        </h3>
+                        <div class="content">
+                            <p>
+                                <span class="icon has-text-primary"><i class="fas fa-envelope"></i></span>
+                                <a href="mailto:immohanbera10@gmail.com">immohanbera10@gmail.com</a>
+                            </p>
+                            <p>
+                                <span class="icon has-text-primary"><i class="fas fa-phone"></i></span>
+                                9740767658
+                            </p>
+                            <p>
+                                <span class="icon has-text-primary"><i class="fas fa-map-marker-alt"></i></span>
+                                East Medinipur, West Bengal, India
+                            </p>
+                            <p>
+                                <span class="icon has-text-primary"><i class="fab fa-github"></i></span>
+                                <a href="https://github.com/mohanbera" target="_blank">github.com/mohanbera</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Skills -->
+                    <div class="box">
+                        <h3 class="title is-4 has-text-primary">
+                            <span class="icon mr-2">
+                                <i class="fas fa-code"></i>
+                            </span>
+                            Skills
+                        </h3>
+                        <div class="field is-grouped is-grouped-multiline">
+                            <!-- <div class="control"> -->
+                                <div class="tags">
+                                    <span class="tag is-primary is-medium skill-tag">Java</span>
+                                    <span class="tag is-primary is-medium skill-tag">NodeJS</span>
+                                    <span class="tag is-primary is-medium skill-tag">Angular</span>
+                                    <span class="tag is-primary is-medium skill-tag">Postgresql</span>
+                                    <span class="tag is-primary is-medium skill-tag">Git</span>
+                                    <span class="tag is-primary is-medium skill-tag">TypeScript</span>
+                                    <span class="tag is-primary is-medium skill-tag">Docker</span>
+                                    <span class="tag is-primary is-medium skill-tag">Rust</span>
+                                    <span class="tag is-primary is-medium skill-tag">SQLite</span>
+                                </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+
+                    <!-- Achievements -->
+                    <div class="box">
+                        <h3 class="title is-4 has-text-primary">
+                            <span class="icon mr-2">
+                                <i class="fas fa-trophy"></i>
+                            </span>
+                            Achievements
+                        </h3>
+                        <div class="content">
+                            <div class="achievement-card">
+                                <span class="achievement-icon"><i class="fas fa-star"></i></span>
+                                <div class="achievement-content">
+                                    Achieved a 5-star rating
+                                    <span class="achievement-platform">CodeChef</span>
+                                    <a href="https://www.codechef.com/" class="external-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="achievement-card">
+                                <span class="achievement-icon"><i class="fas fa-chart-line"></i></span>
+                                <div class="achievement-content">
+                                    Contest rating above 2000
+                                    <span class="achievement-platform">LeetCode</span>
+                                    <a href="https://leetcode.com/" class="external-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="achievement-card">
+                                <span class="achievement-icon"><i class="fas fa-code"></i></span>
+                                <div class="achievement-content">
+                                    6-star in problem-solving, 5-star in Java
+                                    <span class="achievement-platform">HackerRank</span>
+                                    <a href="https://www.hackerrank.com/" class="external-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="achievement-card">
+                                <span class="achievement-icon"><i class="fas fa-medal"></i></span>
+                                <div class="achievement-content">
+                                    University topper in Codersbit India (2019)
+                                    <a href="#" class="external-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="achievement-card">
+                                <span class="achievement-icon"><i class="fas fa-laptop-code"></i></span>
+                                <div class="achievement-content">
+                                    Finalist at DBS Hackathon (2020)
+                                    <span class="achievement-platform">DBS</span>
+                                    <a href="#" class="external-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="achievement-card">
+                                <span class="achievement-icon"><i class="fas fa-certificate"></i></span>
+                                <div class="achievement-content">
+                                    Certified for Snackdown (2019)
+                                    <span class="achievement-platform">CodeChef</span>
+                                    <a href="https://www.codechef.com/snackdown" class="external-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="achievement-card">
+                                <span class="achievement-icon"><i class="fas fa-award"></i></span>
+                                <div class="achievement-content">
+                                    Ranked 28th globally in ALKH2019
+                                    <span class="achievement-platform">IIT Allahabad</span>
+                                    <a href="https://www.codechef.com/" class="external-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="achievement-card">
+                                <span class="achievement-icon"><i class="fas fa-trophy"></i></span>
+                                <div class="achievement-content">
+                                    Finalist in Code Gladiators 2022-2024
+                                    <span class="achievement-platform">TechGig</span>
+                                    <a href="https://www.techgig.com/codegladiators" class="external-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certificates -->
+                    <div class="box">
+                        <h3 class="title is-4 has-text-primary">
+                            <span class="icon mr-2">
+                                <i class="fas fa-certificate"></i>
+                            </span>
+                            Certificates
+                        </h3>
+                        <div class="content">
+                            <div class="achievement-card">
+                                <span class="achievement-icon"><i class="fas fa-certificate"></i></span>
+                                <div class="achievement-content">
+                                    CCDSAP
+                                    <span class="achievement-platform">CodeChef</span>
+                                    <a href="https://www.codechef.com/certification/data-structures-and-algorithms" class="external-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="achievement-card">
+                                <span class="achievement-icon"><i class="fas fa-certificate"></i></span>
+                                <div class="achievement-content">
+                                    Data Structure and Algorithm
+                                    <span class="achievement-platform">CodingBlocks</span>
+                                    <a href="https://codingblocks.com/" class="external-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interests -->
+                    <div class="box">
+                        <h3 class="title is-4 has-text-primary">
+                            <span class="icon mr-2">
+                                <i class="fas fa-heart"></i>
+                            </span>
+                            Interests
+                        </h3>
+                        <div class="tags">
+                            <span class="tag is-primary is-medium skill-tag">Cricket</span>
+                            <span class="tag is-primary is-medium skill-tag">Football</span>
+                            <span class="tag is-primary is-medium skill-tag">Competitive Programming</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer has-background-light">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Mohan Bera</strong> | Computer Programmer | <a href="mailto:immohanbera10@gmail.com">immohanbera10@gmail.com</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
